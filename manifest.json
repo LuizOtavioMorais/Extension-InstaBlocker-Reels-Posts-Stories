@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Ocultador de Reels",
+  "version": "1.0",
+  "description": "Oculta Reels, Posts e Stories do Instagram.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d3a1e5f0-b2c4-4a6d-8e9f-1a2b3c4d5e6f}",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "default_title": "Ocultador de Reels"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instagram.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}

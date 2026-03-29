@@ -1,0 +1,235 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Ocultador de Reels — Estilos v3.0
+   ═══════════════════════════════════════════════════════════════════
+   Este CSS trabalha em conjunto com o content.js.
+   Ele cuida de:
+     1. Painel flutuante de controle (canto superior direito)
+     2. Estilizar elementos marcados pelo JS (data-reel-oculto, etc.)
+     3. Esconder links/seções de Reels, Posts, Stories na navegação
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── PAINEL DE CONTROLE ──────────────────────────────────────────── */
+
+#ocultar-painel-controle {
+  position: fixed;
+  top: 120px;
+  right: 16px;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  user-select: none;
+}
+
+/* Botão ☰ que abre/fecha o painel */
+#ocultar-painel-toggle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin-left: auto;
+}
+
+#ocultar-painel-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .45);
+}
+
+/* Dropdown (a lista de toggles) */
+#ocultar-painel-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  min-width: 220px;
+  background: #1a1a2e;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .55);
+  display: none;
+  /* controlado via JS */
+  flex-direction: column;
+  gap: 10px;
+  animation: painel-fade-in .2s ease;
+}
+
+#ocultar-painel-dropdown.aberto {
+  display: flex;
+}
+
+@keyframes painel-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título do painel */
+#ocultar-painel-dropdown .painel-titulo {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: rgba(255, 255, 255, .45);
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* Cada item de toggle */
+.ocultar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .04);
+  transition: background .15s ease;
+}
+
+.ocultar-item:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+.ocultar-item-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e4e6eb;
+}
+
+/* Toggle switch */
+.ocultar-switch {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ocultar-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.ocultar-switch .slider {
+  position: absolute;
+  inset: 0;
+  background: #3a3a4a;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background .25s ease;
+}
+
+.ocultar-switch .slider::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  bottom: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform .25s ease;
+}
+
+.ocultar-switch input:checked+.slider {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d);
+}
+
+.ocultar-switch input:checked+.slider::before {
+  transform: translateX(18px);
+}
+
+/* ── CLASSES DE OCULTAÇÃO (aplicadas via JS conforme toggles) ───── */
+
+/* 1. Reels — elementos marcados pelo JS (colapsados no layout) */
+body.ocultar-reels [data-reel-oculto="true"] {
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 2a. Posts — elementos marcados pelo JS (colapsados no layout) */
+body.ocultar-posts [data-post-oculto="true"] {
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Carrosséis de Reels sugeridos */
+body.ocultar-reels div[role="presentation"]:has(a[href*="/reel/"]) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Aba Reels no perfil */
+body.ocultar-reels a[href$="/reels/"][role="tab"],
+body.ocultar-reels a[href$="/reels/"][role="tab"]>* {
+  display: none !important;
+}
+
+/* Sugestão "Assistir Reels" */
+body.ocultar-reels div:has(> a[href="/reels/"]:only-child) {
+  display: none !important;
+}
+
+/* Modal de Reel */
+body.ocultar-reels div[role="dialog"]:has(a[href*="/reel/"]) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+
+
+
+
+
+/* 3. Posts — A ocultação de posts é feita pelo JavaScript (processarPosts),
+   que usa isPost() para diferenciar posts de reels corretamente.
+   NÃO usar CSS aqui, pois article:not(...) esconde reels junto. */
+
+/* 4. Stories — ocultar a barra de stories no topo do feed */
+body.ocultar-stories div[data-pagelet="story_tray"],
+body.ocultar-stories div[role="menu"]:has(canvas),
+body.ocultar-stories div[role="menu"]:has(canvas)~*,
+body.ocultar-stories header+div>div>div>ul,
+body.ocultar-stories section>main>div>header+div>div:first-child,
+body.ocultar-stories div[role="presentation"]:has(canvas) {
+  display: none !important;
+}
+
+
+
+
+/* Stories na barra lateral (perfis com anel colorido) */
+body.ocultar-stories div[role="listbox"] {
+  display: none !important;
+}
