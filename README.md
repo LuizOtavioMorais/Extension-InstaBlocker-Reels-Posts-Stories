@@ -27,7 +27,7 @@ As configurações são **salvas automaticamente** no armazenamento local do nav
 1. **Baixe o código** — Clone o repositório ou baixe como ZIP e extraia:
 
    ```bash
-   git clone https://github.com/LuizOtavioMorais/Extensao-Remover-Reels.git
+   git clone https://github.com/LuizOtavioMorais/Extension-InstaBlocker-Reels-Posts-Stories.git
    ```
 
 2. **Acesse a página de extensões** do navegador:
@@ -38,7 +38,7 @@ As configurações são **salvas automaticamente** no armazenamento local do nav
 
 4. **Carregue a extensão** — Clique no botão **"Carregar sem compactação"** (ou "Load unpacked").
 
-5. **Selecione a pasta** — Navegue até a pasta onde você baixou/extraiu o projeto (`Extensao-Remover-Reels`) e selecione-a.
+5. **Selecione a pasta** — Navegue até a pasta onde você baixou/extraiu o projeto (`Extension-InstaBlocker-Reels-Posts-Stories`) e selecione-a.
 
 6. **Pronto!** ✅ — A extensão aparecerá na lista de extensões instaladas. Abra o Instagram e o painel de controle estará disponível.
 
@@ -79,7 +79,7 @@ As configurações são **salvas automaticamente** no armazenamento local do nav
 ## 📁 Estrutura do Projeto
 
 ```
-Extensao-Remover-Reels/
+Extension-InstaBlocker-Reels-Posts-Stories/
 ├── manifest.json    # Configuração da extensão (Manifest V3)
 ├── content.js       # Script principal injetado no Instagram
 ├── styles.css       # Estilos do painel de controle e regras de ocultação
