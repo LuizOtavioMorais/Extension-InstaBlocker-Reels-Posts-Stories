@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Reels-Blocker" },
+  "extDesc": { "message": "Verbirgt Instagram Reels, Beiträge und Stories." },
+  "panelToggleTitle": { "message": "Versteck-Einstellungen" },
+  "panelTitle": { "message": "Nur verstecken:" },
+  "toggleReels": { "message": "🎬 Reels / Reels-Button" },
+  "togglePosts": { "message": "📷 Beiträge" },
+  "toggleStories": { "message": "⏳ Stories" }
+}

@@ -1,162 +1,165 @@
-# 🎬 Ocultador de Reels — Extensão para Navegador (v3.0)
+# 🎬 Reels Blocker — Browser Extension (v3.0)
 
-Extensão de navegador que permite **ocultar Reels, Posts e Stories** no Instagram. Funciona no **Google Chrome**, **Microsoft Edge**, **Mozilla Firefox** e qualquer navegador baseado em Chromium.
+A browser extension that allows you to **hide Reels, Posts, and Stories** on Instagram. It works on **Google Chrome**, **Microsoft Edge**, **Mozilla Firefox**, and any Chromium-based browser.
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-| Funcionalidade | Descrição |
+| Feature | Description |
 |---|---|
-| 🎬 **Ocultar Reels** | Remove Reels do feed principal, carrosséis de Reels sugeridos, aba Reels em perfis e modais de Reel |
-| 📷 **Ocultar Posts** | Remove posts com imagens do feed (diferencia automaticamente posts de Reels) |
-| ⏳ **Ocultar Stories** | Remove a barra de Stories no topo do feed e stories na barra lateral |
+| 🎬 **Hide Reels** | Removes Reels from the main feed, suggested Reels carousels, the Reels tab on profiles, and Reel modals |
+| 📷 **Hide Posts** | Removes posts with images from the feed (automatically differentiates posts from Reels) |
+| ⏳ **Hide Stories** | Removes the Stories bar at the top of the feed and stories in the sidebar |
+| 🌍 **Multi-language Support (i18n)** | Automatically translates the extension's interface based on your browser's language. Supported: English, Portuguese, Spanish, French, German, Italian, Japanese, Chinese, Russian, and Hindi. |
 
-## 🖥️ Painel de Controle
+## 🖥️ Control Panel
 
-A extensão adiciona um **botão flutuante** (☰) no canto superior direito do Instagram. Ao clicar, um dropdown aparece com toggles para ativar/desativar cada funcionalidade individualmente.
+The extension adds a **floating button** (☰) in the top right corner of Instagram. Clicking it reveals a dropdown with toggles to enable/disable each feature individually.
 
-As configurações são **salvas automaticamente** no armazenamento local do navegador, então suas preferências persistem entre sessões.
+Settings are **automatically saved** in your browser's local storage, meaning your preferences persist across sessions.
 
 ---
 
-## 📦 Instalação
+## 📦 Installation
 
 ### Google Chrome / Microsoft Edge (Chromium)
 
-1. **Baixe o código** — Clone o repositório ou baixe como ZIP e extraia:
+1. **Download the code** — Clone the repository or download it as a ZIP and extract it:
 
    ```bash
    git clone https://github.com/LuizOtavioMorais/Extension-InstaBlocker-Reels-Posts-Stories.git
    ```
 
-2. **Acesse a página de extensões** do navegador:
-   - **Chrome:** Digite `chrome://extensions` na barra de endereço
-   - **Edge:** Digite `edge://extensions` na barra de endereço
+2. **Access the extensions page** in your browser:
+   - **Chrome:** Type `chrome://extensions` in the address bar
+   - **Edge:** Type `edge://extensions` in the address bar
 
-3. **Ative o Modo de Desenvolvedor** — No canto superior direito da página, ative o toggle **"Modo do desenvolvedor"** (ou "Developer mode").
+3. **Enable Developer Mode** — In the top right corner of the page, toggle **"Developer mode"**.
 
-4. **Carregue a extensão** — Clique no botão **"Carregar sem compactação"** (ou "Load unpacked").
+4. **Load the extension** — Click the **"Load unpacked"** button.
 
-5. **Selecione a pasta** — Navegue até a pasta onde você baixou/extraiu o projeto (`Extension-InstaBlocker-Reels-Posts-Stories`) e selecione-a.
+5. **Select the folder** — Navigate to the folder where you downloaded/extracted the project (`Extension-InstaBlocker-Reels-Posts-Stories`) and select it.
 
-6. **Pronto!** ✅ — A extensão aparecerá na lista de extensões instaladas. Abra o Instagram e o painel de controle estará disponível.
+6. **Done!** ✅ — The extension will appear in your list of installed extensions. Open Instagram and the control panel will be available.
 
 ### Mozilla Firefox
 
-1. **Baixe o código** — Clone o repositório ou baixe como ZIP e extraia.
+1. **Download the code** — Clone the repository or download as ZIP and extract.
 
-2. **Acesse a página de depuração:** Digite `about:debugging#/runtime/this-firefox` na barra de endereço.
+2. **Access the debugging page:** Type `about:debugging#/runtime/this-firefox` in the address bar.
 
-3. **Carregar extensão temporária** — Clique em **"Carregar extensão temporária..."** (ou "Load Temporary Add-on...").
+3. **Load temporary add-on** — Click on **"Load Temporary Add-on..."**.
 
-4. **Selecione o arquivo `manifest.json`** dentro da pasta do projeto.
+4. **Select the `manifest.json` file** inside the project folder.
 
-5. **Pronto!** ✅ — A extensão será carregada temporariamente (ela será removida ao fechar o Firefox).
+5. **Done!** ✅ — The extension will be loaded temporarily (it will be removed when you close Firefox).
 
-> ⚠️ **Nota:** No Firefox, extensões carregadas em modo de depuração são **temporárias**. Para instalação permanente, é necessário assinar a extensão via [addons.mozilla.org](https://addons.mozilla.org).
-
----
-
-## 🚀 Como Usar
-
-1. **Abra o Instagram** ([instagram.com](https://www.instagram.com)) no navegador.
-
-2. **Localize o botão** — No canto superior direito da página, você verá um botão com as cores do Instagram (gradiente roxo/vermelho/amarelo) com o ícone ☰.
-
-3. **Clique no botão** — Um painel dropdown aparecerá com as opções:
-
-   - 🎬 **Reels** — Oculta Reels no feed
-   - 📷 **Posts** — Oculta posts com imagens
-   - ⏳ **Stories** — Oculta a barra de Stories
-
-4. **Ative os toggles** que desejar — cada opção funciona independentemente.
-
-5. **As configurações são salvas automaticamente** — ao reabrir o Instagram, suas preferências serão mantidas.
+> ⚠️ **Note:** In Firefox, extensions loaded in debugging mode are **temporary**. For permanent installation, you need to sign the extension via [addons.mozilla.org](https://addons.mozilla.org).
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🚀 How to Use
+
+1. **Open Instagram** ([instagram.com](https://www.instagram.com)) in your browser.
+
+2. **Locate the button** — In the top right corner of the page, you'll see a button with Instagram colors (purple/red/yellow gradient) and a ☰ icon.
+
+3. **Click the button** — A dropdown panel will appear with the options:
+
+   - 🎬 **Reels** — Hides Reels in the feed
+   - 📷 **Posts** — Hides posts with images
+   - ⏳ **Stories** — Hides the Stories bar
+
+4. **Toggle the options** as you wish — each option works independently.
+
+5. **Settings are saved automatically** — when you reopen Instagram, your preferences will be kept.
+
+---
+
+## 📁 Project Structure
 
 ```
 Extension-InstaBlocker-Reels-Posts-Stories/
-├── manifest.json    # Configuração da extensão (Manifest V3)
-├── content.js       # Script principal injetado no Instagram
-├── styles.css       # Estilos do painel de controle e regras de ocultação
-├── icons/           # Ícones da extensão (16, 32, 48, 128px)
+├── manifest.json    # Extension configuration (Manifest V3)
+├── content.js       # Main script injected into Instagram
+├── styles.css       # Control panel styles and hiding rules
+├── _locales/        # i18n translation folders for multiple languages
+├── icons/           # Extension icons (16, 32, 48, 128px)
 │   ├── 16.png
 │   ├── 32.png
 │   ├── 48.png
 │   └── 128.png
-└── README.md        # Este arquivo
+└── README.md        # This file
 ```
 
-### Descrição dos Arquivos
+### File Description
 
-| Arquivo | Descrição |
+| File | Description |
 |---|---|
-| `manifest.json` | Define metadados da extensão, permissões (`storage`), e quais scripts/estilos injetar no Instagram. Usa **Manifest V3** com compatibilidade Firefox (Gecko). |
-| `content.js` | Script injetado em todas as páginas do Instagram. Contém toda a lógica: detecção de Reels/Posts, painel de controle, persistência de configurações e gerenciamento de infinite scroll. |
-| `styles.css` | Estilos do painel flutuante (botão, dropdown, toggles) e regras CSS de ocultação para Reels, Posts e Stories. |
+| `manifest.json` | Defines extension metadata, permissions (`storage`), and which scripts/styles to inject. Uses **Manifest V3** with Firefox (Gecko) compatibility. |
+| `content.js` | Script injected into all Instagram pages. Contains all logic: Reels/Posts detection, control panel, settings persistence, and infinite scroll management. |
+| `styles.css` | Floating panel styles (button, dropdown, toggles) and CSS hiding rules for Reels, Posts, and Stories. |
+| `_locales/` | Contains the translation files `messages.json` grouped by language codes (e.g., `en`, `pt_BR`, `es`). |
 
 ---
 
-## ⚙️ Como Funciona (Visão Técnica)
+## ⚙️ How it Works (Technical Overview)
 
-### Estratégia: "Fantasma no Lugar"
+### Strategy: "Ghost in Place"
 
-O Instagram usa **virtualização de lista** — ele estima alturas dos itens para calcular posições de scroll. Se simplesmente removermos um elemento com `display: none`, a altura total muda e causa **pulos visuais** no scroll.
+Instagram uses **list virtualization** — it estimates item heights to calculate scroll positions. If we simply remove an element with `display: none`, the total height changes and causes **visual jumps** while scrolling.
 
-A solução adotada é transformar o elemento em um **"fantasma"**: ele continua no DOM com `height: 0`, `overflow: hidden` e `opacity: 0`, mantendo o fluxo do layout intacto enquanto fica completamente invisível e inerte.
+The adopted solution is to transform the element into a **"ghost"**: it remains in the DOM with `height: 0`, `overflow: hidden`, and `opacity: 0`, keeping the layout flow intact while being completely invisible and inert.
 
-### Detecção de Conteúdo
+### Content Detection
 
-- **Reels:** Detectados por links com `/reel/` ou `/reels/`, SVGs com `aria-label` contendo "reel", texto "Reels" no header, ou vídeos com aspecto retrato (proporção > 1.5).
-- **Posts:** Identificados por imagens de CDN do Instagram (`scontent`, `cdninstagram`) maiores que 150px, excluindo elementos já identificados como Reels.
+- **Reels:** Detected by links containing `/reel/` or `/reels/`, SVGs with `aria-label` containing "reel", "Reels" text in the header, or videos with a portrait aspect ratio (> 1.5).
+- **Posts:** Identified by Instagram CDN images (`scontent`, `cdninstagram`) larger than 150px, excluding elements already identified as Reels.
 
 ### Infinite Scroll
 
-A extensão monitora o scroll do usuário. Quando elementos são ocultados e o conteúdo visível fica insuficiente, ela força o Instagram a carregar mais itens utilizando técnicas de sincronização com o React virtualizer.
+The extension monitors the user's scroll. When elements are hidden and the visible content becomes insufficient, it forces Instagram to load more items using synchronization techniques with the React virtualizer.
 
 ### MutationObserver
 
-Um `MutationObserver` com debounce (300ms) monitora adições ao DOM, processando automaticamente novos Reels e Posts conforme o usuário navega pelo feed.
+A `MutationObserver` with debounce (300ms) monitors DOM additions, automatically processing new Reels and Posts as the user navigates the feed.
 
 ---
 
-## 🛠️ Desenvolvimento
+## 🛠️ Development
 
-### Pré-requisitos
+### Prerequisites
 
-- Navegador compatível (Chrome, Edge, Firefox ou qualquer Chromium)
-- Nenhuma dependência externa — a extensão é 100% vanilla JavaScript/CSS
+- Compatible browser (Chrome, Edge, Firefox, or any Chromium-based)
+- No external dependencies — the extension is 100% vanilla JavaScript/CSS
 
-### Testando Alterações
+### Testing Changes
 
-1. Faça suas alterações nos arquivos do projeto.
-2. Vá até a página de extensões do navegador (`chrome://extensions`).
-3. Clique no botão **🔄 Recarregar** na extensão (ou pressione o ícone de reload).
-4. Recarregue a página do Instagram (`F5` ou `Ctrl+R`).
+1. Make your changes to the project files.
+2. Go to the browser's extensions page (`chrome://extensions`).
+3. Click the **🔄 Reload** button on the extension.
+4. Refresh the Instagram page (`F5` or `Ctrl+R`).
 
-### Depuração
+### Debugging
 
-Abra o **DevTools** (`F12`) no Instagram e filtre o console pela tag `[OcultadorDeReels]` para ver os logs da extensão.
-
----
-
-## 📄 Licença
-
-Este projeto é de uso livre. Sinta-se à vontade para modificar e distribuir.
+Open **DevTools** (`F12`) on Instagram and filter the console by the `[OcultadorDeReels]` tag to see the extension logs.
 
 ---
 
-## 🤝 Contribuições
+## 📄 License
 
-Contribuições são bem-vindas! Se encontrar bugs ou tiver sugestões:
+This project is free to use. Feel free to modify and distribute.
 
-1. Abra uma **Issue** descrevendo o problema ou sugestão.
-2. Faça um **Fork** do projeto.
-3. Crie uma **branch** para sua feature (`git checkout -b minha-feature`).
-4. Faça o **commit** (`git commit -m 'Adiciona minha feature'`).
-5. Faça o **push** (`git push origin minha-feature`).
-6. Abra um **Pull Request**.
+---
+
+## 🤝 Contributions
+
+Contributions are welcome! If you find bugs or have suggestions:
+
+1. Open an **Issue** describing the problem or suggestion.
+2. **Fork** the project.
+3. Create a **branch** for your feature (`git checkout -b my-feature`).
+4. **Commit** your changes (`git commit -m 'Add my feature'`).
+5. **Push** to the branch (`git push origin my-feature`).
+6. Open a **Pull Request**.

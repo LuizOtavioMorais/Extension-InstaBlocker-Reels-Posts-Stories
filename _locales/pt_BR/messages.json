@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Ocultador de Reels", "description": "Nome da extensão no Chrome Web Store" },
+  "extDesc": { "message": "Oculta Reels, Posts e Stories do Instagram.", "description": "Descrição da extensão" },
+  "panelToggleTitle": { "message": "Controles de ocultação", "description": "Tooltip do botão principal" },
+  "panelTitle": { "message": "Ocultar Apenas:", "description": "Título do painel de opções" },
+  "toggleReels": { "message": "🎬 Reels / Botão Reels" },
+  "togglePosts": { "message": "📷 Posts" },
+  "toggleStories": { "message": "⏳ Stories" }
+}

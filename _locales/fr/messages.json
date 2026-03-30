@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Bloqueur de Reels" },
+  "extDesc": { "message": "Masque les Reels, les Publications et les Stories d'Instagram." },
+  "panelToggleTitle": { "message": "Contrôles de masquage" },
+  "panelTitle": { "message": "Masquer :" },
+  "toggleReels": { "message": "🎬 Reels / Bouton Reels" },
+  "togglePosts": { "message": "📷 Publications" },
+  "toggleStories": { "message": "⏳ Stories" }
+}

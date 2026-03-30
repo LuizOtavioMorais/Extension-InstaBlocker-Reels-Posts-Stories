@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Blocco Reels" },
+  "extDesc": { "message": "Nasconde Reels, Post e Storie di Instagram." },
+  "panelToggleTitle": { "message": "Controlli di occultamento" },
+  "panelTitle": { "message": "Nascondi solo:" },
+  "toggleReels": { "message": "🎬 Reels / Pulsante Reels" },
+  "togglePosts": { "message": "📷 Post" },
+  "toggleStories": { "message": "⏳ Storie" }
+}

@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Ocultador de Reels" },
+  "extDesc": { "message": "Oculta Reels, Publicaciones e Historias de Instagram." },
+  "panelToggleTitle": { "message": "Controles de ocultación" },
+  "panelTitle": { "message": "Ocultar Solo:" },
+  "toggleReels": { "message": "🎬 Reels / Botón de Reels" },
+  "togglePosts": { "message": "📷 Publicaciones" },
+  "toggleStories": { "message": "⏳ Historias" }
+}

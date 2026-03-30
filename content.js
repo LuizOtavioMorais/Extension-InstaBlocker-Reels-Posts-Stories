@@ -73,7 +73,7 @@ const api = typeof browser !== "undefined" ? browser : chrome;
     // Botão de toggle do painel
     const btnToggle = document.createElement('button');
     btnToggle.id = 'ocultar-painel-toggle';
-    btnToggle.title = 'Controles de ocultação';
+    btnToggle.title = api.i18n.getMessage("panelToggleTitle");
 
     // SVG estático — usar template para parsing seguro
     const svgTemplate = document.createElement('template');
@@ -87,12 +87,12 @@ const api = typeof browser !== "undefined" ? browser : chrome;
 
     const titulo = document.createElement('div');
     titulo.className = 'painel-titulo';
-    titulo.textContent = 'Ocultar Apenas:';
+    titulo.textContent = api.i18n.getMessage("panelTitle");
     dropdown.appendChild(titulo);
 
-    dropdown.appendChild(criarToggleElement('toggle-reels', '🎬 Reels / Botão Reels'));
-    dropdown.appendChild(criarToggleElement('toggle-posts', '📷 Posts'));
-    dropdown.appendChild(criarToggleElement('toggle-stories', '⏳ Stories'));
+    dropdown.appendChild(criarToggleElement('toggle-reels', api.i18n.getMessage("toggleReels")));
+    dropdown.appendChild(criarToggleElement('toggle-posts', api.i18n.getMessage("togglePosts")));
+    dropdown.appendChild(criarToggleElement('toggle-stories', api.i18n.getMessage("toggleStories")));
 
     painel.appendChild(dropdown); //botao de ligar e desligar 'id' 'texto'
 

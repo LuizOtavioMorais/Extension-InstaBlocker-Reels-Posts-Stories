@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "リール非表示" },
+  "extDesc": { "message": "Instagramのリール、投稿、ストーリーズを非表示にします。" },
+  "panelToggleTitle": { "message": "非表示設定" },
+  "panelTitle": { "message": "非表示の対象:" },
+  "toggleReels": { "message": "🎬 リール / リールボタン" },
+  "togglePosts": { "message": "📷 投稿" },
+  "toggleStories": { "message": "⏳ ストーリーズ" }
+}

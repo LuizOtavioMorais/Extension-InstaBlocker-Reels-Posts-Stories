@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Блокировщик Reels" },
+  "extDesc": { "message": "Скрывает Reels, посты и истории в Instagram." },
+  "panelToggleTitle": { "message": "Элементы управления скрытием" },
+  "panelTitle": { "message": "Скрыть только:" },
+  "toggleReels": { "message": "🎬 Reels / Кнопка Reels" },
+  "togglePosts": { "message": "📷 Посты" },
+  "toggleStories": { "message": "⏳ Истории" }
+}

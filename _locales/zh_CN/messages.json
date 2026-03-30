@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Reels 隐藏器" },
+  "extDesc": { "message": "隐藏 Instagram Reels 连续短片、帖子和快拍。" },
+  "panelToggleTitle": { "message": "隐藏控制" },
+  "panelTitle": { "message": "仅隐藏：" },
+  "toggleReels": { "message": "🎬 Reels / Reels 按钮" },
+  "togglePosts": { "message": "📷 帖子" },
+  "toggleStories": { "message": "⏳ 快拍" }
+}

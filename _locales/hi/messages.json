@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "रील्स ब्लॉकर" },
+  "extDesc": { "message": "इंस्टाग्राम रील्स, पोस्ट और स्टोरीज़ को छिपाता है।" },
+  "panelToggleTitle": { "message": "छिपाने के नियंत्रण" },
+  "panelTitle": { "message": "केवल छिपाएं:" },
+  "toggleReels": { "message": "🎬 रील्स / रील्स बटन" },
+  "togglePosts": { "message": "📷 पोस्ट" },
+  "toggleStories": { "message": "⏳ स्टोरीज़" }
+}

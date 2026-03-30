@@ -1,0 +1,9 @@
+{
+  "extName": { "message": "Reels Blocker" },
+  "extDesc": { "message": "Hides Instagram Reels, Posts, and Stories." },
+  "panelToggleTitle": { "message": "Hiding Controls" },
+  "panelTitle": { "message": "Hide Only:" },
+  "toggleReels": { "message": "🎬 Reels / Reels Button" },
+  "togglePosts": { "message": "📷 Posts" },
+  "toggleStories": { "message": "⏳ Stories" }
+}
